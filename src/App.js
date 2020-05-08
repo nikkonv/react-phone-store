@@ -11,6 +11,7 @@ import Details from "./components/Details";
 import ProductList from "./components/ProductList";
 import Default from "./components/Default";
 import Cart from "./components/Cart";
+import Modal from "./components/Modal";
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
           <Route exact path="/cart" component={Cart}></Route>
           <Route component={Default}></Route>
         </Switch>
+        <Modal />
       </Router>
     </Fragment>
   );

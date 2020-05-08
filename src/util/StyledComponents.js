@@ -75,3 +75,19 @@ export const ProductWrapper = styled.div`
 export const ProductFooter = styled.div`
   background-color: var(--mainBlue);
 `;
+
+export const ModalContainer = styled.div`
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  #modal {
+    border-radius: 5px;
+    background: var(--mainWhite);
+  }
+`;
