@@ -44,6 +44,11 @@ export default class Details extends Component {
                   <p className="font-weight-bold mt-3 mb-0">Some info:</p>
                   <p className="text-muted lead">{info}</p>
                   <div>
+                    <Link to="/">
+                      <ButtonContainer className="mr-3">
+                        Back to home
+                      </ButtonContainer>
+                    </Link>
                     <ButtonContainer
                       cart
                       disabled={inCart ? true : false}
