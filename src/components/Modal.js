@@ -1,8 +1,7 @@
 import React, { Component } from "react";
 import { ProductConsumer } from "../context";
-import { ButtonContainer } from "../util/StyledComponents";
+import { ButtonContainer, ModalContainer } from "../util/StyledComponents";
 import { Link } from "react-router-dom";
-import { ModalContainer } from "../util/StyledComponents";
 
 export default class Modal extends Component {
   render() {
@@ -28,7 +27,7 @@ export default class Modal extends Component {
                       <h5 className="text-muted">Price: ${price}</h5>
                       <Link to="/">
                         <ButtonContainer
-                          className="my-2"
+                          className="m-2"
                           onClick={() => closeModal()}
                         >
                           Continue shopping
